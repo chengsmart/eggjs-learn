@@ -1,5 +1,3 @@
-# 闲得蛋疼，选择玩 egg
-
 # eggjs-learn
 
 ## QuickStart
