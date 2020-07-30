@@ -19,14 +19,14 @@ const sequelize = new Sequelize("test", "root", "", {
 const Service = require("egg").Service;
 
 class UserService extends Service {
-  async find(uid) {
-
+  async find() {
     const {
       app
     } = this;
     const localDB = app.mysql.get("localDB");
     // 假如 我们拿到用户 id 从数据库获取用户详细信息
     const userList = await localDB.select("users");
+    // return userList;
     return JSON.parse(JSON.stringify(userList));
   }
 
